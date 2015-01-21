@@ -1,25 +1,72 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-
+   <head>
+	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 	<link href="seyvotecss.css" rel="stylesheet">
 	
-  <title>Selections</title>
-  
-  	<link href="bootstrap.css" rel="stylesheet">
-	
-</head>
+	<link href="bootstrap.css" rel="stylesheet">	
+      <title>Selections</title>
+      <meta name="Selections" content="width=device-width, initial-scale=1.0">
+      <!-- Bootstrap -->
+      <link href="bootstrap.min.css" rel="stylesheet">
 
-<body>	
+      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media 
+         queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page 
+         via file:// -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
+            html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
+            respond.min.js"></script>
+      <![endif]-->
+	  <script>
+	  function fade() {
+		$("#logofade").fadeOut()}
+	  
+	  
+	  </script>
+   </head>
+   <body>
+   <center>
+      <img src="seylogo5.jpg" id="logofade" onload="fadeout()" onclick="fade()" width="120" height="120">
 	
-
 	<h2>Selections</h2>
-	
-		<div id="footer">
-	
-		</div>
-	
-</body>
-
+	<center>
+	<div class="dropdown">
+   <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" 
+      data-toggle="dropdown">
+      Topics
+      <span class="caret"></span>
+   </button>
+   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="vote.html">Vote</a>
+      </li>
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="news.html">News</a>
+      </li>
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="events.html">
+            Upcoming Events
+         </a>
+      </li>
+      <li role="presentation" class="divider"></li>
+      <li role="presentation">
+         <a role="menuitem" tabindex="-1" href="#">Options</a>
+      </li>
+   </ul>
+</div>
+</center>
+</center>
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files 
+            as needed -->
+      <script src="bootstrap.min.js"></script>
+   </body>
 </html>
+
+
+
+
