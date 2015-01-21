@@ -1,0 +1,79 @@
+div {
+	border-radius: 5px;
+}
+body {
+	Background-image: url("seybg.jpg") ;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	background-size: 100% 100%;
+}
+
+#header {
+	height: 150px;
+	background-image: url("shaw_logo.png")  ;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	background-color: ;
+	margin-bottom: 10px;
+}
+
+.left {
+	height: 300px;
+	width: 150px;
+	background-color: #0000CD;
+	float: left;
+	margin-bottom: 10px;
+	padding-top: 15px;
+	padding-left: 30px;
+}
+
+.right {
+	height: 300px;
+	width: 150px;
+	background-color: #32CD32;
+	float: right;
+	margin-bottom: 10px;
+	padding-top: 15px;
+	padding-left: 30px;
+	
+}
+
+p {
+	text-align: center
+}
+#footer {
+	height: 150px;
+	background-image: url("header.jpg") ;
+	background-position: center;
+	background-size: 100% 100%;
+    background-repeat: no-repeat;
+	background-color: ;
+	clear: both;
+
+}
+a{
+	margin-top: 5px;
+	margin-left: 5px;
+}
+h1 {
+	font-family: "Times New Roman", Georgia, Serif;
+	color: black; 
+	text-align: center;
+}
+p {
+	font-family: "Times New Roman", Georgia, Serif;
+	color: black;
+	
+}	
+h2 {
+	font-family: "Times New Roman", Georgia, Serif;
+	text-align: center;
+	color: black;
+}
+.formcenter {
+    position: relative;
+	left: 100px;
+    top: 5px;
+}
+    
