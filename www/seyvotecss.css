@@ -6,6 +6,7 @@ body {
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
+	min-height: 100%;
 	background-size: 100% 100%;
 }
 
@@ -57,6 +58,7 @@ p {
 	clear: both;
 
 }
+
 a{
 	margin-top: 5px;
 	margin-left: 5px;
