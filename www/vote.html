@@ -81,7 +81,7 @@
    <center>
       <h2>Vote</h2>
 	  
-			<table border="1" style="width:50%">
+			<table border="1" style="width:200px">
   <tr>
     <td><h3>CFO</h3></td>
     <td><form>
@@ -95,11 +95,17 @@
   <tr>
     <td><h3>CIO</h3></td>
     <td><form>
-<input type="radio" name="vote" value="mike" checked>Mike
+<input type="radio" name="vote" value="mike" checked>John
 <br>
-<input type="radio" name="vote" value="paul">Paul
+<input type="radio" name="vote" value="paul">Sam
 <br>
-<input type="radio" name="vote" value="paul">Shaw
+<input type="radio" name="vote" value="paul">Albert
+</form></td>
+  </tr><tr>
+  <td></td>
+  <td><form action="thankyou.html" onclick="alert(Signed Out)">
+<br>
+<input type="submit" onclick="alert(Signed Out)" value="Submit">
 </form></td>
   </tr>
 </table>
@@ -111,7 +117,10 @@
       <!-- Include all compiled plugins (below), or include individual files 
             as needed -->
       <script src="bootstrap.min.js"></script>
-   </center>
+	  	
+
+		  <a href="index.html"  class="btn btn-danger" button type="button" onclick="alert(Signed Out)"><b>Sign Out</b></button></a>
+		 </center>
    <div id="footer"></div>
    </body>
 </html>
