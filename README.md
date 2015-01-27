@@ -2,4 +2,7 @@
 Sprint 2 Development
 
 Cornelius Gibbs
-bryan jr 
+Bryan jr Barber
+Cylk Jackson
+Lotti Harper
+Stacy Norris
