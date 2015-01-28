@@ -15,21 +15,11 @@
 	<link href="bootstrap.min.css" rel="stylesheet">
    <script src="jquery.min.js"></script>
    <script src="bootstrap.min.js"></script>
-   <script>
-		function fadeout() {
-		$("#logofade").fadeOut();
-		$("#logofade").fadeIn();
-		$("#logofade").fadeOut();
-		$("#logofade").fadeIn();
-		$("#logofade").fadeOut();
-		$("#logofade").fadeIn();}
-		function fade() {
-		$("#logofade").fadeOut()}
-		
-	</script>
    </head>
    <body>
-   
+    <center>
+      <img src="seylogo5.jpg" id="logofade" width="120" height="120">
+	</center>
    <nav class="navbar navbar-inverse" role="navigation">
    <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" 
@@ -64,12 +54,27 @@
    </div>
 </nav>
  <center>	
-		 
-		<div id="footer"><center>
-      <p id="logofade">	
-		<img src="seylogo5.jpg" align="middle" onload="fadeout()" onclick="fade()" width="120" height="120">
-	</p></center></div>
-	<a href="index.html"  class="btn btn-danger" button type="button" onclick="alert(Signed Out)"><b>Sign Out</b></button></a>
+		  
+		<div id="accordion">
+			<h3><a href="vote.html">Vote</a></h3>
+			<div><a href="vote.html"><b>Go Vote</b></a></div>
+			<h3>Discussions</h3>
+			<div><b>Subject 1</b></div>
+			<h3>Questions</h3>
+			<div><b>Question XYZ?</b></div>
+		</div>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+		<script>
+			$(function() {
+				$("#accordion").accordion();
+			});
+		</script>
+	
+		  	
+		  <a href="index.html"  class="btn btn-danger" button type="button"><b>Sign Out</b></button></a>
+		  
+		<div id="footer"></div>
    </body>
 </html>
 

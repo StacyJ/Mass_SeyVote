@@ -36,10 +36,6 @@
 	  
 	  </script>
    </head>
-   <center>
-   <img src="seylogo5.jpg" id="logofade" align="middle" onload="fadeout()" width="120" height="120">
-   </center>
-   
    <body>
    
    <nav class="navbar navbar-inverse" role="navigation">
@@ -55,8 +51,8 @@
    </div>
    <div class="collapse navbar-collapse" id="example-navbar-collapse">
       <ul class="nav navbar-nav">
-         <li class="active"><a href="selections.html">Select</a></li>
-         <li><a href="#">Recent Polls</a></li>
+         <li class="active"><a href="vote.html">Vote</a></li>
+         <li><a href="selections.html">Selections</a></li>
          <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                Discussion Topics <b class="caret"></b>
@@ -74,39 +70,52 @@
       </ul>
    </div>
 </nav>
+<div id="menu menu-inverse"></div>
 <center>
-
 		  <a href="selections.html"  class="btn btn-warning" button type="button"><b>Go Back</b></button></a>
 		  </center>
-   <center>
+		  <center>
       <h2>Vote</h2>
 	  
 			<table border="1" style="width:200px">
   <tr>
-    <td><h3>CFO</h3></td>
-    <td><form>
-<input type="radio" name="vote" value="mike" checked>Mike
-<br>
-<input type="radio" name="vote" value="paul">Paul
-<br>
-<input type="radio" name="vote" value="paul">Shaw
-</form></td> 
+    <td><center><h3>CEO</h3></center></td>
+    <td><p>Vote for CEO</p><div class="radio">
+   <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" 
+         value="option1" checked> Will Frank
+   </label>
+</div>
+<div class="radio">
+   <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" 
+         value="option2">
+         Palo Hill
+   </label>
+</div>
+
+</td> 
   </tr>
   <tr>
-    <td><h3>CIO</h3></td>
-    <td><form>
-<input type="radio" name="vote" value="mike" checked>John
-<br>
-<input type="radio" name="vote" value="paul">Sam
-<br>
-<input type="radio" name="vote" value="paul">Albert
-</form></td>
+    <td><center><h3>CIO</h3></center></td>
+    <td><p>Vote for CIO</p><div class="radio">
+   <label>
+      <input type="radio" name="optionsRadios2" id="optionsRadios1" 
+         value="option1" checked> Frank Gibb
+   </label>
+</div>
+<div class="radio">
+   <label>
+      <input type="radio" name="optionsRadios2" id="optionsRadios2" 
+         value="option2">
+         Marry Pie
+   </label>
+</div>
+
+	</td>
   </tr><tr>
   <td></td>
-  <td><form action="thankyou.html" onclick="alert(Signed Out)">
-<br>
-<input type="submit" onclick="alert(Signed Out)" value="Submit">
-</form></td>
+  <td><center><a href="thankyou.html"  class="btn btn-info" onclick="alert(You will be Signed Out)" button type="button">Cast Vote</button></a></center></td>
   </tr>
 </table>
 				<ul></ul>
@@ -121,6 +130,8 @@
 
 		  <a href="index.html"  class="btn btn-danger" button type="button" onclick="alert(Signed Out)"><b>Sign Out</b></button></a>
 		 </center>
-   <div id="footer"></div>
+   <div id="footer"><center>
+      <img src="seylogo5.jpg" id="logofade" width="120" height="120">
+	</center></div>
    </body>
 </html>
