@@ -15,9 +15,6 @@
    <script src="bootstrap.min.js"></script>
    </head>
    <body>
-   <center>
-      <img src="seylogo5.jpg" id="logofade" width="120" height="120">
-	</center>
    <nav class="navbar navbar-inverse" role="navigation">
    <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" 
@@ -69,8 +66,14 @@
 			});
 		</script>
 		
-
+		<center>
 		<div id="footer"></div>
+		 <p id="logofade">	
+		<img src="seylogo5.jpg" align="middle" onload="fadeout()" onclick="fade()" width="120" height="120">
+	</p></center>
+	<center>
+	<a href="index.html"  class="btn btn-danger" button type="button" onclick="alert(Signed Out)"><b>Sign Out</b></button></a>
    </body>
+   </center>
 </html>
 
