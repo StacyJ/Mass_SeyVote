@@ -4,7 +4,6 @@
     <description>
         An application for voting.
     </description>
-	<gap:plugin name="org.apache.cordova.vibration" version="0.3.11" />
     <author email="snorris@icstars.org" href="http://icstars.org">
 			Mass, inc.
 	</author>
