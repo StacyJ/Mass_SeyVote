@@ -75,63 +75,65 @@
 		  </center>
 		  <center>
       <h2>Election</h2>
-	  
-			<table border="1" style="width:200px">
-  <tr>
-    <td><center><h3>CEO</h3></center></td>
-    <td><p>Vote for CEO</p><div class="radio">
-   <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios1" 
-         value="option1" checked> Will Frank
-   </label>
-</div>
-<div class="radio">
-   <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios2" 
+	  <table border="1" style="width:200px">
+		<tr>
+			<td><center><h3>CEO</h3></center></td>
+			<td><p>Vote for CEO</p><div class="radio">
+			<label>
+			<input type="radio" name="optionsRadios" id="optionsRadios1" 
+			value="option1" checked> Will Frank
+			</label>
+			</div>
+		<div class="radio">
+		<label>
+		<input type="radio" name="optionsRadios" id="optionsRadios2" 
          value="option2">
          Palo Hill
-   </label>
+		</label>
 </div>
 
-</td> 
-  </tr>
-  <tr>
-    <td><center><h3>CIO</h3></center></td>
-    <td><p>Vote for CIO</p><div class="radio">
-   <label>
-      <input type="radio" name="optionsRadios2" id="optionsRadios1" 
-         value="option1" checked> Frank Gibb
-   </label>
+		</td> 
+		</tr>
+		<tr>
+		<td><center><h3>CIO</h3></center></td>
+		<td><p>Vote for CIO</p><div class="radio">
+		<form action="/vote" method="GET">
+		   <label>
+			  <input type="radio" name="optionsRadios2" id="optionsRadios1" 
+				 value="option1" checked> Frank Gibb
+		   </label>
+	   <input type="submit" value="Send Form">
+	   </form>
 </div>
 <div class="radio">
-   <label>
-      <input type="radio" name="optionsRadios2" id="optionsRadios2" 
-         value="option2">
-         Marry Pie
-   </label>
+		   <label>
+			  <input type="radio" name="optionsRadios2" id="optionsRadios2" 
+				 value="option2">
+				 Marry Pie
+		   </label>
 </div>
 
-	</td>
-  </tr><tr>
-  <td></td>
-  <td><center><a href="thankyou.html"  class="btn btn-info" onclick="alert(You will be Signed Out)" button type="button">Cast Vote</button></a></center></td>
-  </tr>
-</table>
-				<ul></ul>
-				<ul></ul>
-				<ul></ul>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://code.jquery.com/jquery.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files 
-            as needed -->
-      <script src="bootstrap.min.js"></script>
+			</td>
+		  </tr><tr>
+		  <td></td>
+		  <td><center><a href="thankyou.html"  class="btn btn-info" onclick="alert(You will be Signed Out)" button type="button">Cast Vote</button></a></center></td>
+		  </tr>
+		</table>
+						<ul></ul>
+						<ul></ul>
+						<ul></ul>
+			  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+			  <script src="https://code.jquery.com/jquery.js"></script>
+			  <!-- Include all compiled plugins (below), or include individual files 
+					as needed -->
+			  <script src="bootstrap.min.js"></script>
 	  	
 
-		  <a href="index.html"  class="btn btn-danger" button type="button" onclick="alert(Signed Out)"><b>Sign Out</b></button></a>
-		 </center>
+			<a href="index.html"  class="btn btn-danger" button type="button" onclick="alert(Signed Out)"><b>Sign Out</b></button></a>
+			</center>
    <div id="footer"></div>
-   <center>
-      <img src="seylogo5.jpg" id="logofade" width="120" height="120">
-	</center></div>
+		    <center>
+			  <img src="seylogo5.jpg" id="logofade" width="120" height="120">
+			</center></div>
    </body>
 </html>
