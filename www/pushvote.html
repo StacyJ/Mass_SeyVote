@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+    <script src="https://code.jquery.com/mobile/git/jquery.mobile-git.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/mobile/git/jquery.mobile-git.css" />
+    <title>Vote</title>
+</head>
+    <body>
+        <div>
+        <h1>SeyVote</h1>
+        </div>
+        <form id="postvote">
+        <center>
+          <h2>Should we donate to a organization?</h2>
+        <label>
+            <input type="radio" name="Choice" value="Yes">Yes
+        </label>
+        <label>
+            <input type="radio" name="Choice" value="No">No
+        </label>
+        <input type="hidden" name="partnerId" value="900">
+        <input type="hidden" name="voteId" value="1">
+            <input type="hidden" name="Choice" value="2" />
+        <input type="submit" value="Submit">
+            </center>
+    </form>
+  
+</body>
+<script>
+    $(document).ready(function () {
+        $("#postvote").submit(function () {
+            $.ajax({
+                type: "POST",
+                url: "pushvote.aspx",
+                data: $(this).serialize(),
+                complete: function (data) {
+                    window.location = 'votecounted.html';
+                }
+            });
+
+        });
+    });
+</script>
+</html>

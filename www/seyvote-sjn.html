@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="StyleSheet" href="StyleSheet1.css" />
+    <title>Welcome</title>
+</head>
+<body>
+    <center>                                                                       
+             <h1>Welcome to Seyvote!</h1>
+    </center>
+         <div id="helloWorld"></div>
+    
+    
+    <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <script>
+        $(document).ready(function () {
+            console.log("hello");
+            $.ajax({
+                url: "http://seyvote-sjn.azurewebsites.net/seyvotesjn.aspx",
+                success: function (result) {
+                    console.log(result);
+                    var j = JSON.parse(result);
+                    $("#helloWorld").append(result);
+
+
+                }
+            });
+        });
+
+
+    </script>
+
+    
+</body>
+</html>

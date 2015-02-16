@@ -1,28 +1,20 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 	<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
 	<link href="seyvotecss.css" rel="stylesheet">
-	
+    <link href="bootstrap.min.css" rel="stylesheet">
 	<link href="bootstrap.css" rel="stylesheet">
 	<script>
-		function fadeout() {
-		$("#logofade").fadeOut();
-		$("#logofade").fadeIn();
-		$("#logofade").fadeOut();
-		$("#logofade").fadeIn();
-		$("#logofade").fadeOut();
-		$("#logofade").fadeIn();}
+        function fadeout() {
+            $("#logofade").fadeOut();
+            $("#logofade").fadeIn();
+        }
 		function fade() {
-		$("#logofade").fadeOut()}
-		
+		    $("#logofade").fadeOut();
+		}
 	</script>
-	
       <title>SeyVote</title>
-      
-      <!-- Bootstrap -->
-      <link href="bootstrap.min.css" rel="stylesheet">
-
       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media 
          queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page 
@@ -36,27 +28,13 @@
    </head>
    <body>
 	<center>
-      
-
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://code.jquery.com/jquery.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files 
-            as needed -->
-      <script src="bootstrap.min.js"></script>
-	
-    
-		
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
 	<p id="logofade">	
 		<img src="seylogo5.jpg" align="middle" onload="fadeout()" width="120" height="120">
 	</p>
-	
-	
-	
-	<style>
-	
+    <style>
 	</style>
-	
-	
 		<h1><em><b>Welcome To SeyVote</b></em></h1>
 		<h2><em><b>Log In</b></em></h2> 
 				
@@ -75,12 +53,15 @@
           <label for="loginkeeping"><b>Keep me logged in</b></label>
      </p>
      <p class="login button"> 
-		
-		<span class="glyphicon-log-in">
-		  <a href="Selections.html"  class="btn btn-primary" button type="button" onclick="alert('Signed In')"><b>Sign In</b></button></a></span>
-		<span class="glyphicon-log-in">
-		  <a href="admin_home.html"  class="btn btn-danger" button type="button" onclick="alert('Admin Log In')"><b>Admin Sign In</b></button></a></span>
-     </p>
+         <center>
+             <span class="glyphicon-log-in">
+                 <a href="user_home.html" class="btn btn-primary btn-block" button type="button" onclick="alert('Signed In')"><b>Sign In</b></button></a>
+             </span>
+             <span class="glyphicon-log-in">
+                 <a href="admin_home.html" class="btn btn-danger btn-block" button type="button" onclick="alert('Admin Log In')"><b>Admin Sign In</b></button></a>
+             </span>
+         </center>
+             </p>
 	<div id="footer"></div>
 </form>
 </center>
