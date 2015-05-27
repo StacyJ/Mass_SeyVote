@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-   <head>
+  <head>
        <title>User Home</title>
        <link href="bootstrap.css" rel="stylesheet">
        <link href="bootstrap.min.css" rel="stylesheet">
@@ -17,10 +17,11 @@
 		function fade() {
 		$("#logofade").fadeOut()}
 	</script>
-   </head>
-   <body>
-   <nav class="navbar navbar-inverse" role="navigation">
-   <div class="navbar-header">
+  </head>
+<body>
+	<center>
+    <nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" 
          data-target="#example-navbar-collapse">
          <span class="sr-only">Toggle navigation</span>
@@ -39,20 +40,17 @@
       </ul>
     </div>
 	</nav>
-	<center>
 		<a href="pushvote.html" class="btn btn-primary btn-lg btn-block" button type="button"><strong><em>Vote</em></strong></button></a>
-	</center>
-	<center> 
 		<a href="election.html" class="btn btn-primary btn-lg btn-block" button type="button"><strong><em>Election</em></strong></button></a> 		 
+	<div id="footer"></div>
 	</center>
-		<div id="footer"></div>
+
 	<center>
       <p id="logofade">	
-		<img src="seylogo5.jpg" align="middle" onload="fadeout()" onclick="fade()" width="120" height="120">
-	  </p>
+		<img src="seylogo5.jpg" align="middle" onload="fadeout()" onclick="fade()" width="120" height="120"></p>
 	<a href="index.html"  class="btn btn-danger btn-block" button type="button" onclick="alert(Signed Out)"><b>Sign Out</b></button></a>
     </center>
-   </body>
+</body>
 </html>
 
 
